@@ -8,7 +8,7 @@ const TrendingItems = ({
   image,
 }) => {
   return (
-    <div className="bg-white p-4 rounded-3xl w-[220px] relative h-[200px]">
+    <div className="bg-white p-3 rounded-3xl w-[210px] relative h-[200px]">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-sm">👑</span>
         <span className="text-orange-500 text-sm font-medium">Top of the week</span>

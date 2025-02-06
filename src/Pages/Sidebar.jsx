@@ -25,7 +25,8 @@ const Sidebar = ({ open, setOpen }) => {
 
   return (
     <div 
-      className={`${open ? "w-56" : "w-32"} fixed top-0 left-0 h-screen duration-250 p-3 bg-white sidebar shadow-md transition-all ease-in-out`} 
+      className={`${open ? "w-56" : "w-32"} fixed top-0 left-0 h-screen
+       duration-250 p-3 bg-white sidebar shadow-md transition-all ease-in-out`} 
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >

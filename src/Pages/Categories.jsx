@@ -1,6 +1,8 @@
 import React from 'react';
+import { Navigate, useNavigate } from 'react-router';
 
 const Categories = () => {
+  const navigate=useNavigate();
   const categories = [
     "Burgers",
     "Pizza",
@@ -34,9 +36,10 @@ const Categories = () => {
 
       <div className="flex flex-wrap gap-4">
         {categories.map((category, index) => (
-          <button
+          <button onClick={()=>navigate("/500")}
             key={`${category}-${index}`}
-            className="px-2 py-2 rounded-full border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-colors duration-200"
+            className="px-2 py-2 rounded-full border border-orange-500 text-orange-500
+             hover:bg-orange-500 hover:text-white transition-colors duration-200"
           >
             {category}
           </button>
