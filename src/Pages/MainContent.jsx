@@ -122,78 +122,79 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center mb-2">
-        <h2 className="text-black text-xl font-bold font-[Playfair_Display] ml-5">Trending Orders</h2>
-        <p className="ml-130 flex items-center text-sm">
-          View All
-          <button onClick={()=>navigate("/404")} className="text-white bg-[#ea6a12]
-           rounded-full text-xs px-2 py-1 text-center
-           hover:bg-slate-300 hover:text-orange-500 ml-2">
-            >
-          </button>
-        </p>
-      </div>
-      <div className="flex gap-14 flex-wrap mt-4 ml-2">
-        <TrendingItems
-          title="Italian Salad"
-          calories={100}
-          persons={4}
-          price="7.49"
-          image={t1}
-        />
-        <TrendingItems
-          title="Italian Salad"
-          calories={50}
-          persons={4}
-          price="7.49"
-          image={t2}
-        />
-        <TrendingItems
-          title="Italian Salad"
-          calories={90}
-          persons={3}
-          price="7.49"
-          image={t3}
-        />
-      </div>
-      <div className="flex gap-15 flex-wrap mt-4 ml-2">
-        <TrendingItems
-          title="Italian Salad"
-          calories={50}
-          persons={5}
-          price="7.49"
-          image={t4}
-        />
-        <TrendingItems
-          title="Italian Salad"
-          calories={70}
-          persons={6}
-          price="7.49"
-          image={t5}
-        />
-        <TrendingItems
-          title="Italian Salad"
-          calories={80}
-          persons={4}
-          price="7.49"
-          image={t6}
-        />
-      </div>
-        <div className='flex flex-col bg-[#ffffff] rounded-2xl p-3 w-3/9
-         transform -translate-y-120 ml-220'>
+      <div className="flex gap-4">
+        <div className="flex flex-col w-1/2 items-left w-full">
           <div className="flex items-center mb-2">
-            <h2 className="text-black text-lg font-bold font-[Playfair_Display] text-left">Categories</h2>
-            <p className="ml-60 flex items-center text-sm">
+            <h2 className="text-black text-xl font-bold font-[Playfair_Display] ml-5">Trending Orders</h2>
+            <p className="ml-135 flex items-center text-sm">
               View All
-              <button className="text-white bg-[#ea6a12] rounded-full text-xs px-2 py-1 text-center 
-              hover:bg-slate-300 hover:text-orange-500 ml-2">
+              <button onClick={()=>navigate("/404")} className="text-white bg-[#ea6a12]
+               rounded-full text-xs px-2 py-1 text-center hover:bg-slate-300 hover:text-orange-500 ml-2">
                 >
               </button>
             </p>
           </div>
-          <div className='border-t-2 border-slate-300 py-2 mt-6 w-full'></div>
-          <Categories />
+          <div className="flex gap-18 flex-wrap mt-4">
+            <TrendingItems
+              title="Italian Salad"
+              calories={100}
+              persons={4}
+              price="7.49"
+              image={t1}
+            />
+            <TrendingItems
+              title="Italian Salad"
+              calories={50}
+              persons={4}
+              price="7.49"
+              image={t2}
+            />
+            <TrendingItems
+              title="Italian Salad"
+              calories={90}
+              persons={3}
+              price="7.49"
+              image={t3}
+            />
+          </div>
+          <div className="flex gap-18 flex-wrap mt-4">
+            <TrendingItems
+              title="Italian Salad"
+              calories={50}
+              persons={5}
+              price="7.49"
+              image={t4}
+            />
+            <TrendingItems
+              title="Italian Salad"
+              calories={70}
+              persons={6}
+              price="7.49"
+              image={t5}
+            />
+            <TrendingItems
+              title="Italian Salad"
+              calories={80}
+              persons={4}
+              price="7.49"
+              image={t6}
+            />
+          </div>
         </div>
+        <div className="flex flex-col w-1/2 items-right">
+          <div className='bg-[#ffffff] rounded-2xl p-3 w-110 mr-10'>
+            <div className="flex items-center mb-2">
+              <h2 className="text-black text-lg font-bold font-[Playfair_Display] text-left">Categories</h2>
+              <p className="ml-auto flex items-center text-sm">
+                View All
+                <button className="text-white bg-[#ea6a12] rounded-full text-xs px-2 py-1 text-center hover:bg-slate-300 hover:text-orange-500 ml-2">
+                  >
+                </button>
+              </p>
+            </div>
+            <div className='border-t-2 border-slate-300 py-2 mt-6 '></div>
+            <Categories />
+          </div></div></div>
     </main>
   );
 };

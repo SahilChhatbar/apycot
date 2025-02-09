@@ -41,7 +41,8 @@ const Sidebar = ({ open, setOpen }) => {
       <div className='flex flex-col items-start'>
         <img
           src={logo}
-          className={`cursor-pointer duration-300 ${!open && "hidden"} w-66 border-b-2 border-gray-200 top-0`}
+          className={`cursor-pointer duration-300 ${!open && "hidden"} w-66 border-b-2 
+          border-gray-200 top-0`}
           alt="Logo"
         />
       </div>
