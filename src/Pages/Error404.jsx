@@ -19,7 +19,7 @@ const Error404 = () => {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus itaque tempore incidunt distinctio cumque magni ad earum.
       </p>
       <div className='flex flex-row gap-3 justify-center mt-8'>
-        <button onClick={() => navigate("/mainpage")} className="text-white font-sans bg-[#ea6a12] rounded-full text-md px-4 py-3 text-center hover:bg-slate-300 hover:text-orange-500 text-base">
+        <button onClick={() => navigate("/mainpage")} className="cursor-pointer text-white font-sans bg-[#ea6a12] rounded-full text-md px-4 py-3 text-center hover:bg-slate-300 hover:text-orange-500 text-base">
           Back to Home
         </button>
       </div>
