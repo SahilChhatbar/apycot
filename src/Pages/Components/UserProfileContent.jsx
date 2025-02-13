@@ -107,7 +107,7 @@ const UserProfileContent = () => {
         {OrderOnline.map((item) => (
           <li key={item.id} className="order-item">
             <span>{item.name}</span>
-            <span className="badge">{item.count}</span>
+            <span className="badge"><button onClick={()=>navigate("/500")} className="cursor-pointer">{item.count}</button></span> 
           </li>
         ))}
       </ul> 

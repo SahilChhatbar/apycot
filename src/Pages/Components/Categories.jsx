@@ -38,8 +38,8 @@ const Categories = () => {
         {categories.map((category, index) => (
           <button onClick={()=>navigate("/500")}
             key={`${category}-${index}`}
-            className="cursor-pointer px-2 py-2 rounded-full border border-orange-500 text-orange-500
-             hover:bg-orange-500 hover:text-white transition-colors duration-200"
+            className="cursor-pointer px-3 py-2 rounded-full border border-orange-500 text-orange-500
+             hover:bg-orange-500 hover:text-white transition-colors duration-200 text-base "
           >
             {category}
           </button>

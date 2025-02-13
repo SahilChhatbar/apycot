@@ -8,7 +8,7 @@ import signup1 from '../assets/signup1.png';
 const Sign = () => {
   const navigate = useNavigate(); 
   return (
-    <div className="h-screen flex bg-gradient-to-br from-orange-50 to-white ">
+    <div className="h-screen flex bg-gradient-to-br from-orange-50 to-white   ">
       <div className="flex flex-col items-left ml-20 mt-30 w-1/2">
         <img className="w-50 mr-130" src={logo} />
         <div className="flex flex-col items-center">

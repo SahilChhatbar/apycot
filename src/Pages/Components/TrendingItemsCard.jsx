@@ -11,7 +11,7 @@ const TrendingItems = ({
     <div className="bg-white p-3 rounded-3xl w-[210px] relative h-[200px]">
       <div className="flex items-center gap-2 mb-2">
         <span className="text-sm">👑</span>
-        <span className="text-orange-500 text-sm font-medium">Top of the week</span>
+        <span className="text-orange-500 text-base font-medium">Top of the week</span>
       </div>
       <div className="flex justify-between items-start">
         <div className="flex flex-col gap-4">

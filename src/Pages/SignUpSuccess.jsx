@@ -16,20 +16,20 @@ const SignUpSuccess = () => {
         <p className="text-gray-700 mt-4">
           An email has been sent to <strong>your email address</strong>. Please check your inbox and click on the included link to reset your password.
         </p>
-        <button className="mt-6 px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition">
-          Back to Home
+        <button className="mt-6 px-6 py-3 bg-orange-500 text-white font-semibold rounded-3xl hover:bg-orange-600 transition">
+          Back to home
         </button>
       </div>
-      {/* Images positioned similarly to the reference */}
-      <div className="absolute w-full h-full flex flex-wrap items-center justify-center gap-6 -z-10">
-        <img src={s1} alt="s1" className="absolute top-10 left-20 w-20 h-20 rounded-full shadow-md" />
-        <img src={s2} alt="s2" className="absolute top-10 right-20 w-20 h-20 rounded-full shadow-md" />
-        <img src={s3} alt="s3" className="absolute top-1/4 left-10 w-20 h-20 rounded-full shadow-md" />
-        <img src={s4} alt="s4" className="absolute top-1/4 right-10 w-20 h-20 rounded-full shadow-md" />
-        <img src={s5} alt="s5" className="absolute bottom-1/4 left-10 w-20 h-20 rounded-full shadow-md" />
-        <img src={s6} alt="s6" className="absolute bottom-1/4 right-10 w-20 h-20 rounded-full shadow-md" />
-        <img src={s7} alt="s7" className="absolute bottom-10 left-20 w-20 h-20 rounded-full shadow-md" />
-        <img src={s8} alt="s8" className="absolute bottom-10 right-20 w-20 h-20 rounded-full shadow-md" />
+      
+      <div className="absolute w-full h-full flex flex-wrap items-center justify-center gap-6 z-10">
+        <img src={s1} alt="s1" className="absolute top-10 left-20 w-40  rounded-full shadow-md" />
+        <img src={s2} alt="s2" className="absolute top-10 right-20 w-40 rounded-full shadow-md" />
+        <img src={s3} alt="s3" className="absolute top-1/4 left-10 w-40 rounded-full shadow-md" />
+        <img src={s4} alt="s4" className="absolute top-1/4 right-10 w-40 rounded-full shadow-md" />
+        <img src={s5} alt="s5" className="absolute bottom-1/4 left-10 w-40 rounded-full shadow-md" />
+        <img src={s6} alt="s6" className="absolute bottom-1/4 right-10 w-40 rounded-full shadow-md" />
+        <img src={s7} alt="s7" className="absolute bottom-10 left-20 w-40 rounded-full shadow-md" />
+        <img src={s8} alt="s8" className="absolute bottom-10 right-20 w-40 rounded-full shadow-md" />
       </div>
     </div>
   );

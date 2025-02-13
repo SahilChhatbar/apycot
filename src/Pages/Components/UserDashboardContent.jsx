@@ -58,7 +58,7 @@ const UserDashBoardContent = () => {
         <div className="flex flex-col w-2/3">
           <div className="flex items-center mb-0 gap-100">
             <h2 className="text-black text-4xl font-bold font-[Playfair_Display] px-7">Menu Category</h2>
-            <p className=" flex items-center text-sm ">
+            <p className=" flex items-center text-base ">
               View All
               <button onClick={()=>navigate("/404")} className="cursor-pointer text-white bg-[#ea6a12] rounded-full
                text-xs px-2 py-1 text-center hover:bg-slate-300 hover:text-orange-500 ml-2">
@@ -124,7 +124,7 @@ const UserDashBoardContent = () => {
       </div>
       <div className="flex gap-4">
         <div className="flex flex-col w-1/2 items-left w-full">
-          <div className="flex items-center mb-2 gap-95">
+          <div className="flex items-center mb-2 gap-93">
             <h2 className="px-7 text-black text-4xl font-bold font-[Playfair_Display] ">
               Trending Orders</h2>
             <p className="flex items-center text-title">
@@ -136,7 +136,7 @@ const UserDashBoardContent = () => {
               </button>
             </p>
           </div>
-          <div className="flex gap-18 flex-wrap mt-4">
+          <div className="flex gap-18 flex-wrap mt-4 pl-3">
             <TrendingItemsCard
               title="Italian Salad"
               calories={100}
@@ -159,7 +159,7 @@ const UserDashBoardContent = () => {
               image={t3}
             />
           </div>
-          <div className="flex gap-18 flex-wrap mt-4">
+          <div className="flex gap-18 flex-wrap mt-4 pl-3">
             <TrendingItemsCard
               title="Italian Salad"
               calories={50}
@@ -184,11 +184,11 @@ const UserDashBoardContent = () => {
           </div>
         </div>
         <div className="flex flex-col w-1/2 items-right">
-          <div className='bg-[#ffffff] rounded-2xl p-3 w-110 mr-10'>
-            <div className="flex items-center mb-2">
-              <h2 className="text-black text-2xl font-bold font-[Playfair_Display] text-left">
+          <div className='bg-[#ffffff] rounded-2xl p-3 w-106 mr-10'>
+            <div className="flex items-center mb-2 gap-45">
+              <h2 className="text-black text-2xl font-bold font-[Playfair_Display] text-left pb-3 pt-3">
                 Categories</h2>
-              <p className="ml-auto flex items-center text-sm">
+              <p className=" flex items-center text-base">
                 View All
                 <button className="cursor-pointer text-white bg-[#ea6a12] rounded-full text-xs px-2 py-1 text-center
                  hover:bg-slate-300 hover:text-orange-500 ml-2">

@@ -62,7 +62,7 @@ const Sidebar = ({ open, setOpen }) => {
                   >
                     <li
                       className={`group text-[#959895] leading-[28px] text-base flex items-center justify-between cursor-pointer w-full 
-                        p-2 rounded-md transition-all duration-50 hover:bg-[#ea6a12] hover:rounded-full hover:text-white`}
+                        p-2 mb-2 rounded-md transition-all duration-50 hover:bg-[#ea6a12] hover:rounded-full hover:text-white`}
                     >
                       <div className="flex items-center">
                         <img 
@@ -70,7 +70,7 @@ const Sidebar = ({ open, setOpen }) => {
                           alt={menu.title} 
                           className="w-6 h-6 transition duration-200 group-hover:brightness-0 group-hover:invert" 
                         />
-                        <span className={` ${!open && "hidden"} origin-left duration-200 pl-11`}>
+                        <span className={` ${!open && "hidden"} origin-left duration-200 pl-9`}>
                           {menu.title}
                         </span>
                       </div>
@@ -102,7 +102,7 @@ const Sidebar = ({ open, setOpen }) => {
                   <li
                     key={index}
                     className={`group text-[#959895] leading-[28px] text-base flex items-start justify-between cursor-pointer w-full 
-                      p-2 rounded-md transition-all duration-50 hover:bg-[#ea6a12] hover:text-white hover:rounded-full`}
+                      p-2 rounded-md mb-2 transition-all duration-50 hover:bg-[#ea6a12] hover:text-white hover:rounded-full`}
                   >
                     <img 
                       src={menu.src} 

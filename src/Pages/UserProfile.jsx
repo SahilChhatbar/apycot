@@ -9,7 +9,7 @@ const UserProfile = () => {
   return (
     <div className="flex">
       <Sidebar open={open} setOpen={setOpen} />
-      <div className={`flex-1 transition-all duration-500 ${open ? 'ml-56' : 'ml-24'}`}>
+      <div className={`flex-1 transition-all duration-500 ${open ? 'ml-60' : 'ml-24'}`}>
         <Header />
         <UserProfileContent />
         <Footer />
