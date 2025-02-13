@@ -4,10 +4,11 @@ import logo from '../assets/Logo.svg'
 import sign from '../assets/sign.png'
 import socials from '../assets/Socail Links.png'
 
+
 const Login = () => {
   const navigate = useNavigate(); 
   return (
-    <div className="flex  bg-[#ffffff] ml-30">
+    <div className="flex  bg-gradient-to-br from-orange-50 to-white">
     <div className="flex flex-col items-left ml-20 mt-40 w-1/2">
       <img className="w-50 ml-0" src={logo} />
       <div className="flex flex-col ml-35 mt-5"><h2 className="text-3xl font-bold font-[Playfair]">
@@ -28,7 +29,7 @@ const Login = () => {
         Sign in</button>
        <p className="w-full text-center mt-3 ml-3">or sign in with other accounts?</p>
        <img className="w-40 ml-26 mt-2 cursor-pointer" src={socials} /> 
-       <p className="ml-6">Don’t have an account?<span className="cursor-pointer text-orange-500">
+       <p className="ml-6">Don’t have an account?<span onClick={()=>navigate("/")}  className="cursor-pointer text-orange-500">
         Click here to sign up.</span></p>
     </div>
     <div className="flex flex-col items-right w-1/2"></div>

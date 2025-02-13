@@ -33,18 +33,18 @@ import { useNavigate } from "react-router-dom";
 const UserDashBoardContent = () => {
   const navigate = useNavigate();
   return (
-    <main className='bg-[#fff6d8] min-h-screen flex-shrink-0 p-4 relative'>
+    <main className='bg-[#fff6d8] min-h-screen p-4 relative'>
       <div className='flex gap-0 relative'>
         <div className='relative w-fit'>
           <img src={banner} className='rounded-4xl mt-3.5 p-4 w-full' />
           <div className='absolute top-3/5 left-2/6 transform -translate-x-1/2 -translate-y-1/2 space-y-2'>
             <img src={deal} alt="Deal" />
             <h2 className="text-black text-4xl font-bold font-[Playfair_Display]">Hello, Sahil Chhatbar</h2>
-            <p className='font-[Poppins] font-semibold text-slate-500 text-sm'>
+            <p className='font-[Poppins] font-semibold text-slate-500 text-base'>
               Get <span className='text-orange-500'>FREE delivery</span> on every weekend
             </p>
             <button onClick={()=>navigate("/404")} type="button" className="cursor-pointer text-white bg-[#ea6a12]
-             rounded-full text-xs px-2 py-2 text-center me-2 hover:bg-slate-300 
+             rounded-full text-base px-3 py-1.5 text-center me-2 hover:bg-slate-300 
              hover:text-orange-500 mb-2">
               Check Menu
             </button>

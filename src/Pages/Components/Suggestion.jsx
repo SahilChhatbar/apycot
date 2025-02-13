@@ -18,7 +18,7 @@ const Suggestions = () => {
       <div className='border-t-2 border-slate-200 py-2 mt-6 w-full'></div>
         {suggestions.map((item, index) => (
          
-         <div key={index} className="cursor-pointer flex items-center space-x-4 bg-white p-3 py-4 rounded-lg shadow-sm">
+         <div key={index} className="cursor-pointer flex items-center space-x-4 bg-white p-3 py-4 rounded-lg ">
             <img
               src={item.image}
               alt={item.name}
